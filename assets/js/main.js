@@ -40,7 +40,7 @@
      LINKS
   --------------------------------------------------------- */
   const LINKS = Object.assign({
-    whatsapp: 'https://wa.me/972598389848',
+    message: 'https://ig.me/m/maram.design31',
     instagram: 'https://www.instagram.com/maram.design31/?hl=ar'
   }, C.links || {});
   $$('[data-link-key]').forEach(a => { const u = LINKS[a.dataset.linkKey]; if (u) a.href = u; });
@@ -75,7 +75,7 @@
           <h3>${esc(s.ar)}</h3>
           <span class="svc-en">${esc(s.en)}</span>
           <p>${esc(s.desc)}</p>
-          <a class="svc-link" href="${esc(LINKS.whatsapp)}?text=${encodeURIComponent('مرحبًا مرام، أود الاستفسار عن خدمة ' + s.ar)}" target="_blank" rel="noopener">اطلب الخدمة <svg><use href="#i-arrow"/></svg></a>
+          <a class="svc-link" href="${esc(LINKS.message)}" target="_blank" rel="noopener">اطلب الخدمة <svg><use href="#i-arrow"/></svg></a>
         </div>
       </article>`).join('');
     if (FINE) $$('.svc-inner', svcGrid).forEach(card => {

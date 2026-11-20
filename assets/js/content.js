@@ -13,7 +13,7 @@ window.SITE_CONTENT = {
   showPlaceholders: false,
 
   links: {
-    whatsapp:  'https://wa.me/972598389848',
+    message:   'https://ig.me/m/maram.design31',   // زر «راسلني» — رسالة مباشرة على إنستغرام
     instagram: 'https://www.instagram.com/maram.design31/?hl=ar'
   },
 
