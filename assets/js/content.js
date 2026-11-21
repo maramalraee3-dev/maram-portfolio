@@ -50,27 +50,33 @@ window.SITE_CONTENT = {
   ------------------------------------------------------ */
   projects: [
     {
-      "title": "حملة سوشيال ميديا لمركز تجميل",
+      "title": "رقيم — حملة سوشيال ميديا لوكالة خدمات قانونية",
       "categoryEn": "SOCIAL MEDIA",
       "images": [
-        "assets/projects/beauty-center/01.webp",
-        "assets/projects/beauty-center/02.webp",
-        "assets/projects/beauty-center/03.webp",
-        "assets/projects/beauty-center/04.webp",
-        "assets/projects/beauty-center/05.webp",
-        "assets/projects/beauty-center/06.webp",
-        "assets/projects/beauty-center/07.webp"
+        "assets/projects/raqeem/01.webp",
+        "assets/projects/raqeem/02.webp",
+        "assets/projects/raqeem/03.webp",
+        "assets/projects/raqeem/04.webp",
+        "assets/projects/raqeem/05.webp",
+        "assets/projects/raqeem/06.webp",
+        "assets/projects/raqeem/07.webp",
+        "assets/projects/raqeem/08.webp",
+        "assets/projects/raqeem/09.webp"
       ],
       "thumbs": [
-        "assets/projects/beauty-center/01-sm.webp",
-        "assets/projects/beauty-center/02-sm.webp",
-        "assets/projects/beauty-center/03-sm.webp",
-        "assets/projects/beauty-center/04-sm.webp",
-        "assets/projects/beauty-center/05-sm.webp",
-        "assets/projects/beauty-center/06-sm.webp",
-        "assets/projects/beauty-center/07-sm.webp"
+        "assets/projects/raqeem/01-sm.webp",
+        "assets/projects/raqeem/02-sm.webp",
+        "assets/projects/raqeem/03-sm.webp",
+        "assets/projects/raqeem/04-sm.webp",
+        "assets/projects/raqeem/05-sm.webp",
+        "assets/projects/raqeem/06-sm.webp",
+        "assets/projects/raqeem/07-sm.webp",
+        "assets/projects/raqeem/08-sm.webp",
+        "assets/projects/raqeem/09-sm.webp"
       ],
       "ratios": [
+        0.8,
+        0.8,
         0.8,
         0.8,
         0.8,
@@ -81,29 +87,182 @@ window.SITE_CONTENT = {
       ]
     },
     {
-      "title": "حملة إعلانية لتطبيق تجارة إلكترونية وتوصيل",
+      "title": "IVM — إعلان إطلاق منصة استثمار",
       "categoryEn": "SOCIAL MEDIA ADS",
       "images": [
-        "assets/projects/ecommerce-app/01.webp",
-        "assets/projects/ecommerce-app/02.webp",
-        "assets/projects/ecommerce-app/03.webp",
-        "assets/projects/ecommerce-app/04.webp",
-        "assets/projects/ecommerce-app/05.webp",
-        "assets/projects/ecommerce-app/06.webp",
-        "assets/projects/ecommerce-app/07.webp",
-        "assets/projects/ecommerce-app/08.webp",
-        "assets/projects/ecommerce-app/09.webp"
+        "assets/projects/ivm/01.webp"
       ],
       "thumbs": [
-        "assets/projects/ecommerce-app/01-sm.webp",
-        "assets/projects/ecommerce-app/02-sm.webp",
-        "assets/projects/ecommerce-app/03-sm.webp",
-        "assets/projects/ecommerce-app/04-sm.webp",
-        "assets/projects/ecommerce-app/05-sm.webp",
-        "assets/projects/ecommerce-app/06-sm.webp",
-        "assets/projects/ecommerce-app/07-sm.webp",
-        "assets/projects/ecommerce-app/08-sm.webp",
-        "assets/projects/ecommerce-app/09-sm.webp"
+        "assets/projects/ivm/01-sm.webp"
+      ],
+      "ratios": [
+        0.8
+      ]
+    },
+    {
+      "title": "Abstract — حملة سوشيال ميديا لشركة سفر وسياحة",
+      "categoryEn": "SOCIAL MEDIA",
+      "images": [
+        "assets/projects/abstract-travel/01.webp",
+        "assets/projects/abstract-travel/02.webp",
+        "assets/projects/abstract-travel/03.webp",
+        "assets/projects/abstract-travel/04.webp",
+        "assets/projects/abstract-travel/05.webp",
+        "assets/projects/abstract-travel/06.webp"
+      ],
+      "thumbs": [
+        "assets/projects/abstract-travel/01-sm.webp",
+        "assets/projects/abstract-travel/02-sm.webp",
+        "assets/projects/abstract-travel/03-sm.webp",
+        "assets/projects/abstract-travel/04-sm.webp",
+        "assets/projects/abstract-travel/05-sm.webp",
+        "assets/projects/abstract-travel/06-sm.webp"
+      ],
+      "ratios": [
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "title": "AK × Exness — حملة سوشيال ميديا لتداول الذهب",
+      "categoryEn": "SOCIAL MEDIA ADS",
+      "images": [
+        "assets/projects/ak-gold/01.webp",
+        "assets/projects/ak-gold/02.webp",
+        "assets/projects/ak-gold/03.webp",
+        "assets/projects/ak-gold/04.webp"
+      ],
+      "thumbs": [
+        "assets/projects/ak-gold/01-sm.webp",
+        "assets/projects/ak-gold/02-sm.webp",
+        "assets/projects/ak-gold/03-sm.webp",
+        "assets/projects/ak-gold/04-sm.webp"
+      ],
+      "ratios": [
+        0.917,
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "title": "بنترا — حملة سوشيال ميديا لمنصة دورات تدريبية",
+      "categoryEn": "SOCIAL MEDIA",
+      "images": [
+        "assets/projects/pentra/01.webp",
+        "assets/projects/pentra/02.webp",
+        "assets/projects/pentra/03.webp",
+        "assets/projects/pentra/04.webp",
+        "assets/projects/pentra/05.webp",
+        "assets/projects/pentra/06.webp",
+        "assets/projects/pentra/07.webp",
+        "assets/projects/pentra/08.webp",
+        "assets/projects/pentra/09.webp"
+      ],
+      "thumbs": [
+        "assets/projects/pentra/01-sm.webp",
+        "assets/projects/pentra/02-sm.webp",
+        "assets/projects/pentra/03-sm.webp",
+        "assets/projects/pentra/04-sm.webp",
+        "assets/projects/pentra/05-sm.webp",
+        "assets/projects/pentra/06-sm.webp",
+        "assets/projects/pentra/07-sm.webp",
+        "assets/projects/pentra/08-sm.webp",
+        "assets/projects/pentra/09-sm.webp"
+      ],
+      "ratios": [
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "title": "W — حملة سوشيال ميديا لشركة خدمات أعمال وتسويق",
+      "categoryEn": "SOCIAL MEDIA",
+      "images": [
+        "assets/projects/w-agency/01.webp",
+        "assets/projects/w-agency/02.webp",
+        "assets/projects/w-agency/03.webp",
+        "assets/projects/w-agency/04.webp",
+        "assets/projects/w-agency/05.webp",
+        "assets/projects/w-agency/06.webp",
+        "assets/projects/w-agency/07.webp",
+        "assets/projects/w-agency/08.webp",
+        "assets/projects/w-agency/09.webp"
+      ],
+      "thumbs": [
+        "assets/projects/w-agency/01-sm.webp",
+        "assets/projects/w-agency/02-sm.webp",
+        "assets/projects/w-agency/03-sm.webp",
+        "assets/projects/w-agency/04-sm.webp",
+        "assets/projects/w-agency/05-sm.webp",
+        "assets/projects/w-agency/06-sm.webp",
+        "assets/projects/w-agency/07-sm.webp",
+        "assets/projects/w-agency/08-sm.webp",
+        "assets/projects/w-agency/09-sm.webp"
+      ],
+      "ratios": [
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "title": "Okyali — حملة سوشيال ميديا لمتجر نظارات",
+      "categoryEn": "SOCIAL MEDIA",
+      "images": [
+        "assets/projects/okyali/01.webp",
+        "assets/projects/okyali/02.webp"
+      ],
+      "thumbs": [
+        "assets/projects/okyali/01-sm.webp",
+        "assets/projects/okyali/02-sm.webp"
+      ],
+      "ratios": [
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "title": "ODA — حملة سوشيال ميديا لمطعم ورق عنب وأكل صحي",
+      "categoryEn": "SOCIAL MEDIA",
+      "images": [
+        "assets/projects/oda/01.webp",
+        "assets/projects/oda/02.webp",
+        "assets/projects/oda/03.webp",
+        "assets/projects/oda/04.webp",
+        "assets/projects/oda/05.webp",
+        "assets/projects/oda/06.webp",
+        "assets/projects/oda/07.webp",
+        "assets/projects/oda/08.webp",
+        "assets/projects/oda/09.webp"
+      ],
+      "thumbs": [
+        "assets/projects/oda/01-sm.webp",
+        "assets/projects/oda/02-sm.webp",
+        "assets/projects/oda/03-sm.webp",
+        "assets/projects/oda/04-sm.webp",
+        "assets/projects/oda/05-sm.webp",
+        "assets/projects/oda/06-sm.webp",
+        "assets/projects/oda/07-sm.webp",
+        "assets/projects/oda/08-sm.webp",
+        "assets/projects/oda/09-sm.webp"
       ],
       "ratios": [
         0.75,
@@ -118,232 +277,102 @@ window.SITE_CONTENT = {
       ]
     },
     {
-      "title": "حملة شركة سفر وسياحة",
+      "title": "إعلانات مطاعم ومخبوزات",
       "categoryEn": "SOCIAL MEDIA",
       "images": [
-        "assets/projects/travel-agency/01.webp",
-        "assets/projects/travel-agency/02.webp",
-        "assets/projects/travel-agency/03.webp",
-        "assets/projects/travel-agency/04.webp",
-        "assets/projects/travel-agency/05.webp",
-        "assets/projects/travel-agency/06.webp",
-        "assets/projects/travel-agency/07.webp"
+        "assets/projects/food-ads/01.webp",
+        "assets/projects/food-ads/02.webp"
       ],
       "thumbs": [
-        "assets/projects/travel-agency/01-sm.webp",
-        "assets/projects/travel-agency/02-sm.webp",
-        "assets/projects/travel-agency/03-sm.webp",
-        "assets/projects/travel-agency/04-sm.webp",
-        "assets/projects/travel-agency/05-sm.webp",
-        "assets/projects/travel-agency/06-sm.webp",
-        "assets/projects/travel-agency/07-sm.webp"
+        "assets/projects/food-ads/01-sm.webp",
+        "assets/projects/food-ads/02-sm.webp"
       ],
       "ratios": [
         0.8,
-        0.8,
-        0.8,
-        0.8,
-        0.8,
-        0.8,
-        0.8
-      ]
-    },
-    {
-      "title": "Moon cafe — حملة سوشيال ميديا",
-      "categoryEn": "SOCIAL MEDIA",
-      "images": [
-        "assets/projects/moon-cafe/01.webp",
-        "assets/projects/moon-cafe/02.webp",
-        "assets/projects/moon-cafe/03.webp",
-        "assets/projects/moon-cafe/04.webp",
-        "assets/projects/moon-cafe/05.webp"
-      ],
-      "thumbs": [
-        "assets/projects/moon-cafe/01-sm.webp",
-        "assets/projects/moon-cafe/02-sm.webp",
-        "assets/projects/moon-cafe/03-sm.webp",
-        "assets/projects/moon-cafe/04-sm.webp",
-        "assets/projects/moon-cafe/05-sm.webp"
-      ],
-      "ratios": [
-        0.8,
-        0.8,
-        0.8,
-        0.8,
-        0.8
-      ]
-    },
-    {
-      "title": "حملة منتجات عناية بالبشرة",
-      "categoryEn": "PRODUCT ADS",
-      "images": [
-        "assets/projects/skincare/01.webp",
-        "assets/projects/skincare/02.webp",
-        "assets/projects/skincare/03.webp"
-      ],
-      "thumbs": [
-        "assets/projects/skincare/01-sm.webp",
-        "assets/projects/skincare/02-sm.webp",
-        "assets/projects/skincare/03-sm.webp"
-      ],
-      "ratios": [
-        0.8,
-        0.8,
-        0.8
-      ]
-    },
-    {
-      "title": "حملة مطعم بيتزا وبرجر",
-      "categoryEn": "SOCIAL MEDIA",
-      "images": [
-        "assets/projects/pizza-burger/01.webp",
-        "assets/projects/pizza-burger/02.webp",
-        "assets/projects/pizza-burger/03.webp"
-      ],
-      "thumbs": [
-        "assets/projects/pizza-burger/01-sm.webp",
-        "assets/projects/pizza-burger/02-sm.webp",
-        "assets/projects/pizza-burger/03-sm.webp"
-      ],
-      "ratios": [
-        1.0,
-        1.0,
         1.0
       ]
     },
     {
-      "title": "حملة منصة تداول",
-      "categoryEn": "SOCIAL MEDIA",
+      "title": "مطبوعات — ورق رسمي وغلاف دليل سفر",
+      "categoryEn": "PRINT",
       "images": [
-        "assets/projects/trading/01.webp",
-        "assets/projects/trading/02.webp",
-        "assets/projects/trading/03.webp"
+        "assets/projects/print/01.webp",
+        "assets/projects/print/02.webp"
       ],
       "thumbs": [
-        "assets/projects/trading/01-sm.webp",
-        "assets/projects/trading/02-sm.webp",
-        "assets/projects/trading/03-sm.webp"
+        "assets/projects/print/01-sm.webp",
+        "assets/projects/print/02-sm.webp"
       ],
       "ratios": [
-        0.8,
-        0.8,
-        0.917
+        1.333,
+        0.713
       ]
     },
     {
-      "title": "إعلانات تطبيق لإدارة المصاريف",
+      "title": "إعلانات منتج — مشروبات طاقة بنكهات",
+      "categoryEn": "PRODUCT ADS",
+      "images": [
+        "assets/projects/energy-drinks/01.webp",
+        "assets/projects/energy-drinks/02.webp",
+        "assets/projects/energy-drinks/03.webp"
+      ],
+      "thumbs": [
+        "assets/projects/energy-drinks/01-sm.webp",
+        "assets/projects/energy-drinks/02-sm.webp",
+        "assets/projects/energy-drinks/03-sm.webp"
+      ],
+      "ratios": [
+        0.799,
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "title": "إعلانات منتجات تجميل وعناية",
+      "categoryEn": "PRODUCT ADS",
+      "images": [
+        "assets/projects/beauty-products/01.webp",
+        "assets/projects/beauty-products/02.webp",
+        "assets/projects/beauty-products/03.webp"
+      ],
+      "thumbs": [
+        "assets/projects/beauty-products/01-sm.webp",
+        "assets/projects/beauty-products/02-sm.webp",
+        "assets/projects/beauty-products/03-sm.webp"
+      ],
+      "ratios": [
+        0.8,
+        1.0,
+        1.088
+      ]
+    },
+    {
+      "title": "La casa Estate — إعلان شركة عقارات",
+      "categoryEn": "SOCIAL MEDIA",
+      "images": [
+        "assets/projects/la-casa/01.webp"
+      ],
+      "thumbs": [
+        "assets/projects/la-casa/01-sm.webp"
+      ],
+      "ratios": [
+        0.8
+      ]
+    },
+    {
+      "title": "سعة — إعلانات تطبيق لإدارة المصاريف",
       "categoryEn": "APP ADS",
       "images": [
-        "assets/projects/fintech-app/01.webp",
-        "assets/projects/fintech-app/02.webp"
+        "assets/projects/saa-app/01.webp",
+        "assets/projects/saa-app/02.webp"
       ],
       "thumbs": [
-        "assets/projects/fintech-app/01-sm.webp",
-        "assets/projects/fintech-app/02-sm.webp"
+        "assets/projects/saa-app/01-sm.webp",
+        "assets/projects/saa-app/02-sm.webp"
       ],
       "ratios": [
-        0.772,
+        0.75,
         0.75
-      ]
-    },
-    {
-      "title": "حملة مكتب محاماة",
-      "categoryEn": "SOCIAL MEDIA",
-      "images": [
-        "assets/projects/law-firm/01.webp",
-        "assets/projects/law-firm/02.webp"
-      ],
-      "thumbs": [
-        "assets/projects/law-firm/01-sm.webp",
-        "assets/projects/law-firm/02-sm.webp"
-      ],
-      "ratios": [
-        0.8,
-        0.8
-      ]
-    },
-    {
-      "title": "حملة متجر ورد وهدايا",
-      "categoryEn": "SOCIAL MEDIA",
-      "images": [
-        "assets/projects/flowers/01.webp",
-        "assets/projects/flowers/02.webp"
-      ],
-      "thumbs": [
-        "assets/projects/flowers/01-sm.webp",
-        "assets/projects/flowers/02-sm.webp"
-      ],
-      "ratios": [
-        0.8,
-        0.8
-      ]
-    },
-    {
-      "title": "حملة متجر نظارات وأزياء",
-      "categoryEn": "SOCIAL MEDIA",
-      "images": [
-        "assets/projects/eyewear/01.webp",
-        "assets/projects/eyewear/02.webp"
-      ],
-      "thumbs": [
-        "assets/projects/eyewear/01-sm.webp",
-        "assets/projects/eyewear/02-sm.webp"
-      ],
-      "ratios": [
-        0.8,
-        0.8
-      ]
-    },
-    {
-      "title": "إعلان رحلات شتوية",
-      "categoryEn": "TRAVEL AD",
-      "images": [
-        "assets/projects/winter-trips/01.webp"
-      ],
-      "thumbs": [
-        "assets/projects/winter-trips/01-sm.webp"
-      ],
-      "ratios": [
-        0.8
-      ]
-    },
-    {
-      "title": "إعلان منصة استثمار",
-      "categoryEn": "SOCIAL MEDIA",
-      "images": [
-        "assets/projects/investment/01.webp"
-      ],
-      "thumbs": [
-        "assets/projects/investment/01-sm.webp"
-      ],
-      "ratios": [
-        0.8
-      ]
-    },
-    {
-      "title": "إعلان شركة خدمات رقمية",
-      "categoryEn": "SOCIAL MEDIA",
-      "images": [
-        "assets/projects/digital-services/01.webp"
-      ],
-      "thumbs": [
-        "assets/projects/digital-services/01-sm.webp"
-      ],
-      "ratios": [
-        0.8
-      ]
-    },
-    {
-      "title": "إعلان منصة رياضية",
-      "categoryEn": "SOCIAL MEDIA",
-      "images": [
-        "assets/projects/sports/01.webp"
-      ],
-      "thumbs": [
-        "assets/projects/sports/01-sm.webp"
-      ],
-      "ratios": [
-        0.8
       ]
     }
   ],
@@ -361,25 +390,23 @@ window.SITE_CONTENT = {
   ------------------------------------------------------ */
   videos: [
     {
-      "title": "تعريف بموقعي",
-      "type": "Website Promo",
-      "src": "assets/videos/video-9.mp4",
-      "poster": "assets/videos/video-9.jpg",
-      "preview": "assets/videos/video-9-preview.mp4",
-      "ratio": "9:16"
-    },
-    {
       "title": "ريل تعريفي شخصي",
       "type": "Personal Reel",
-      "src": "assets/videos/video-1.mp4",
-      "poster": "assets/videos/video-1.jpg",
-      "preview": "assets/videos/video-1-preview.mp4",
+      "src": "assets/videos/video-10.mp4",
+      "crumple": "assets/videos/video-10-crumple.webp",
+      "crumpleFrames": 12,
+      "crumpleSize": [428, 704],
+      "poster": "assets/videos/video-10.jpg",
+      "preview": "assets/videos/video-10-preview.mp4",
       "ratio": "9:16"
     },
     {
       "title": "هوية بصرية — بنترا",
       "type": "Brand Video",
       "src": "assets/videos/video-2.mp4",
+      "crumple": "assets/videos/video-2-crumple.webp",
+      "crumpleFrames": 12,
+      "crumpleSize": [428, 704],
       "poster": "assets/videos/video-2.jpg",
       "preview": "assets/videos/video-2-preview.mp4",
       "ratio": "9:16"
@@ -388,6 +415,9 @@ window.SITE_CONTENT = {
       "title": "جذور فلسطين",
       "type": "Story Video",
       "src": "assets/videos/video-4.mp4",
+      "crumple": "assets/videos/video-4-crumple.webp",
+      "crumpleFrames": 12,
+      "crumpleSize": [1128, 687],
       "poster": "assets/videos/video-4.jpg",
       "preview": "assets/videos/video-4-preview.mp4",
       "ratio": "16:9"
@@ -396,6 +426,9 @@ window.SITE_CONTENT = {
       "title": "Zuma — ريل مطعم",
       "type": "Reels",
       "src": "assets/videos/video-3.mp4",
+      "crumple": "assets/videos/video-3-crumple.webp",
+      "crumpleFrames": 12,
+      "crumpleSize": [428, 704],
       "poster": "assets/videos/video-3.jpg",
       "preview": "assets/videos/video-3-preview.mp4",
       "ratio": "9:16"
@@ -404,6 +437,9 @@ window.SITE_CONTENT = {
       "title": "Moon cafe",
       "type": "Reels",
       "src": "assets/videos/video-5.mp4",
+      "crumple": "assets/videos/video-5-crumple.webp",
+      "crumpleFrames": 12,
+      "crumpleSize": [448, 704],
       "poster": "assets/videos/video-5.jpg",
       "preview": "assets/videos/video-5-preview.mp4",
       "ratio": "482:812"
@@ -412,6 +448,9 @@ window.SITE_CONTENT = {
       "title": "ريل مطعم تايلندي",
       "type": "Reels",
       "src": "assets/videos/video-8.mp4",
+      "crumple": "assets/videos/video-8-crumple.webp",
+      "crumpleFrames": 12,
+      "crumpleSize": [455, 704],
       "poster": "assets/videos/video-8.jpg",
       "preview": "assets/videos/video-8-preview.mp4",
       "ratio": "1080:1788"
@@ -420,6 +459,9 @@ window.SITE_CONTENT = {
       "title": "من الفوضى للسكينة",
       "type": "Awareness Reel",
       "src": "assets/videos/video-6.mp4",
+      "crumple": "assets/videos/video-6-crumple.webp",
+      "crumpleFrames": 12,
+      "crumpleSize": [428, 704],
       "poster": "assets/videos/video-6.jpg",
       "preview": "assets/videos/video-6-preview.mp4",
       "ratio": "9:16"

@@ -50,15 +50,15 @@
      PLACEHOLDER ART (clearly labeled, never presented as work)
   --------------------------------------------------------- */
   function phArt(w, h, seed, k, label) {
-    const pal = [['#E99445', '#F5C84C'], ['#F5C84C', '#E99445'], ['#E99445', '#FFF9EF'], ['#F5C84C', '#FFF9EF']][seed % 4];
+    const pal = [['#E07C98', '#F3B7C6'], ['#F3B7C6', '#E07C98'], ['#E07C98', '#FFF5F1'], ['#F3B7C6', '#FFF5F1']][seed % 4];
     const cx = [0.28, 0.74, 0.5, 0.3][(seed + k) % 4], cy = [0.3, 0.22, 0.72, 0.5][(seed * 2 + k) % 4];
     const m = Math.min(w, h), t = (seed + k) % 4;
     let s = '';
     if (t === 0) s = `<circle cx='${w * cx}' cy='${h * cy}' r='${m * .3}' fill='none' stroke='${pal[1]}' stroke-opacity='.5' stroke-width='${m * .006}'/><circle cx='${w * cx}' cy='${h * cy}' r='${m * .17}' fill='${pal[0]}' fill-opacity='.16'/>`;
     if (t === 1) { s = `<g stroke='${pal[0]}' stroke-opacity='.22' stroke-width='${m * .004}'>`; for (let i = -10; i < 22; i++) s += `<line x1='${i * m * .09}' y1='0' x2='${i * m * .09 + h * .6}' y2='${h}'/>`; s += '</g>'; }
     if (t === 2) { s = `<g fill='${pal[1]}' fill-opacity='.28'>`; for (let x = 1; x < 12; x++) for (let y = 1; y < 14; y++) s += `<circle cx='${x * w / 12}' cy='${y * h / 14}' r='${m * .005}'/>`; s += '</g>'; }
-    if (t === 3) s = `<rect x='${w * .1}' y='${h * .1}' width='${w * .8}' height='${h * .8}' rx='${m * .05}' fill='none' stroke='${pal[1]}' stroke-opacity='.4' stroke-width='${m * .005}'/><rect x='${w * .16}' y='${h * .74}' width='${w * .4}' height='${m * .02}' rx='${m * .01}' fill='${pal[0]}' fill-opacity='.6'/><rect x='${w * .16}' y='${h * .79}' width='${w * .26}' height='${m * .02}' rx='${m * .01}' fill='#FFF9EF' fill-opacity='.25'/>`;
-    const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='${w}' height='${h}' viewBox='0 0 ${w} ${h}'><defs><linearGradient id='b' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#3d3935'/><stop offset='1' stop-color='#211f1d'/></linearGradient><radialGradient id='r' cx='${cx}' cy='${cy}' r='.75'><stop offset='0' stop-color='${pal[0]}' stop-opacity='.5'/><stop offset='1' stop-color='${pal[0]}' stop-opacity='0'/></radialGradient></defs><rect width='100%' height='100%' fill='url(#b)'/><rect width='100%' height='100%' fill='url(#r)'/>${s}<text x='50%' y='${h / 2}' text-anchor='middle' dominant-baseline='middle' font-family='Tahoma,Arial,sans-serif' font-size='${m * .052}' fill='#FFF9EF' fill-opacity='.92'>${label}</text><text x='50%' y='${h / 2 + m * .08}' text-anchor='middle' font-family='Arial,sans-serif' font-size='${m * .03}' fill='#F5C84C' fill-opacity='.85' letter-spacing='3'>${w} × ${h}</text></svg>`;
+    if (t === 3) s = `<rect x='${w * .1}' y='${h * .1}' width='${w * .8}' height='${h * .8}' rx='${m * .05}' fill='none' stroke='${pal[1]}' stroke-opacity='.4' stroke-width='${m * .005}'/><rect x='${w * .16}' y='${h * .74}' width='${w * .4}' height='${m * .02}' rx='${m * .01}' fill='${pal[0]}' fill-opacity='.6'/><rect x='${w * .16}' y='${h * .79}' width='${w * .26}' height='${m * .02}' rx='${m * .01}' fill='#FFF5F1' fill-opacity='.25'/>`;
+    const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='${w}' height='${h}' viewBox='0 0 ${w} ${h}'><defs><linearGradient id='b' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#3D2733'/><stop offset='1' stop-color='#21151B'/></linearGradient><radialGradient id='r' cx='${cx}' cy='${cy}' r='.75'><stop offset='0' stop-color='${pal[0]}' stop-opacity='.5'/><stop offset='1' stop-color='${pal[0]}' stop-opacity='0'/></radialGradient></defs><rect width='100%' height='100%' fill='url(#b)'/><rect width='100%' height='100%' fill='url(#r)'/>${s}<text x='50%' y='${h / 2}' text-anchor='middle' dominant-baseline='middle' font-family='Tahoma,Arial,sans-serif' font-size='${m * .052}' fill='#FFF5F1' fill-opacity='.92'>${label}</text><text x='50%' y='${h / 2 + m * .08}' text-anchor='middle' font-family='Arial,sans-serif' font-size='${m * .03}' fill='#F3B7C6' fill-opacity='.85' letter-spacing='3'>${w} × ${h}</text></svg>`;
     return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
   }
 
@@ -294,7 +294,7 @@
   function closePlayer() {
     const pl = $('#player'); if (!pl || pl.hidden) return;
     const v = $('video', pl); if (v) v.pause();
-    const done = () => { pl.hidden = true; $('#playerBox').innerHTML = ''; lockScroll(false); cfPreview(); if (lb.last) lb.last.focus({ preventScroll: true }); };
+    const done = () => { pl.hidden = true; $('#playerBox').innerHTML = ''; lockScroll(false); cfPreview(); if (window.__crumpleBack) window.__crumpleBack(); if (lb.last) lb.last.focus({ preventScroll: true }); };
     if (RM) return done();
     pl.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 320, easing: 'ease' }).onfinish = done;
   }
@@ -430,6 +430,218 @@
       });
     }
   }
+
+
+  /* =========================================================
+     WORK SPHERE + CRUMPLED VIDEO REEL (new sections inside the first site)
+  ========================================================= */
+  /* designs float in a slowly turning sphere: drag to spin, click to open the project */
+  const orbit = $('#orbit');
+  const designsLabel = n => n === 1 ? 'تصميم واحد' : n === 2 ? 'تصميمان' : n <= 10 ? `${n} تصاميم` : `${n} تصميمًا`;
+  if (orbit && !projects.length) {
+    orbit.innerHTML = '<p class="work-empty">الأعمال قيد الإضافة — قريبًا.</p>';
+  } else if (orbit) {
+    const cap = $('#orbitCap');
+    // pick round-robin across projects so every project shows, without crowding the sphere
+    const MAX = innerWidth < 640 ? 16 : 26;
+    const list = [];
+    for (let round = 0; list.length < MAX; round++) {
+      let added = false;
+      projects.forEach((p, pi) => {
+        if (list.length < MAX && round < p.images.length) {
+          list.push({ pi, ii: round, title: p.title, src: (p.thumbs && p.thumbs[round]) || p.images[round], r: (p.ratios && p.ratios[round]) || 0.8 });
+          added = true;
+        }
+      });
+      if (!added) break;
+    }
+    orbit.insertAdjacentHTML('beforeend', list.map((it, k) =>
+      { const pr = projects[it.pi], th = i => esc((pr.thumbs && pr.thumbs[i]) || pr.images[i]), cnt = pr.images.length;
+        // each project is a folder: its cover on top, the next designs peeking out behind, and the count
+        return `<button class="ob" type="button" data-k="${k}" data-cursor="عرض" aria-label="${esc(it.title)}، التصميم ${it.ii + 1}"><span class="ob-f"><img src="${esc(it.src)}" alt="" loading="lazy" decoding="async" draggable="false"></span></button>`; }).join(''));
+    const els = $$('.ob', orbit), n = els.length;
+    // even spread on a sphere (golden-angle spiral)
+    const ga = Math.PI * (3 - Math.sqrt(5));
+    // keep away from the poles: a point on the spin axis would never move
+    const pts = els.map((_, i) => { const y = (1 - ((i + 0.5) / n) * 2) * 0.82, r = Math.sqrt(1 - y * y), t = ga * i; return [Math.cos(t) * r, y, Math.sin(t) * r]; });
+    let rx = 300, ry = 240;
+    const size = () => {
+      const W = orbit.clientWidth, H = orbit.clientHeight;
+      rx = Math.min(W * 0.4, H * 0.78); ry = H * 0.34;
+      const base = Math.max(74, Math.min(170, Math.min(W, H) * 0.2));
+      els.forEach((el, i) => { el.style.width = base + 'px'; el.style.height = (base / list[i].r) + 'px'; });
+    };
+    size(); addEventListener('resize', size);
+
+    const AUTO = RM ? 0 : (Math.PI * 2) / 16;   // one turn every 16s
+    let ay = 0, ax = -0.22, vy = AUTO, vx = 0, slow = 1, last = 0, running = false, drag = null, moved = false;
+    const frame = t => {
+      if (!running) return;
+      const dt = Math.min(0.05, (t - (last || t)) / 1000); last = t;
+      if (!drag) { vy += (AUTO * slow - vy) * Math.min(1, dt * 1.6); vx *= 0.9; ax += (-0.22 - ax) * Math.min(1, dt * 0.8); }
+      ay += vy * dt; ax = Math.max(-0.7, Math.min(0.7, ax + vx * dt));
+      const cy = Math.cos(ay), sy = Math.sin(ay), cx = Math.cos(ax), sx = Math.sin(ax);
+      for (let i = 0; i < n; i++) {
+        const [x, y, z] = pts[i];
+        const x1 = x * cy + z * sy, z1 = -x * sy + z * cy;
+        const y2 = y * cx - z1 * sx, z2 = y * sx + z1 * cx;   // z2: 1 = front
+        const d = (z2 + 1) / 2;
+        const s = 0.42 + 0.58 * d;
+        const el = els[i];
+        el.style.transform = `translate(-50%,-50%) translate3d(${(x1 * rx).toFixed(1)}px,${(y2 * ry).toFixed(1)}px,0) scale(${s.toFixed(3)})`;
+        el.style.zIndex = Math.round(d * 1000);
+        el.style.opacity = (0.28 + 0.72 * d * d).toFixed(3);
+      }
+      requestAnimationFrame(frame);
+    };
+    new IntersectionObserver(es => {
+      const vis = es[0].isIntersecting;
+      if (vis && !running) { running = true; last = 0; requestAnimationFrame(frame); }
+      else if (!vis) running = false;
+    }).observe(orbit);
+
+    // drag to spin (horizontal), tilt a little (vertical)
+    orbit.addEventListener('pointerdown', e => {
+      if (e.button) return;
+      drag = { x: e.clientX, y: e.clientY, t: performance.now(), id: e.pointerId }; moved = false;
+    });
+    addEventListener('pointermove', e => {
+      if (!drag) return;
+      const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+      if (!moved && Math.abs(dx) > 6 && Math.abs(dx) > Math.abs(dy)) { moved = true; orbit.classList.add('dragging'); }
+      if (!moved) return;
+      const now = performance.now(), dt = Math.max(1, now - drag.t) / 1000;
+      vy = (dx / rx) / dt * 0.9; vx = (dy / ry) / dt * 0.3;
+      ay += dx / rx; ax = Math.max(-0.7, Math.min(0.7, ax + dy / ry * 0.3));
+      drag.x = e.clientX; drag.y = e.clientY; drag.t = now;
+    });
+    const endDrag = () => { if (!drag) return; drag = null; orbit.classList.remove('dragging'); setTimeout(() => { moved = false; }, 0); };
+    addEventListener('pointerup', endDrag); addEventListener('pointercancel', endDrag);
+
+    orbit.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') slow = 0.35; });
+    orbit.addEventListener('pointerleave', () => { slow = 1; hide(); });
+    // the project name shows only while a design is under the pointer (or focused)
+    const show = el => { const it = list[+el.dataset.k]; cap.textContent = `${it.title}، ${designsLabel(projects[it.pi].images.length)}`; cap.classList.add('on'); };
+    const hide = () => cap.classList.remove('on');
+    orbit.addEventListener('pointerover', e => { const el = e.target.closest('.ob'); if (el) show(el); });
+    orbit.addEventListener('pointerout', e => { const el = e.target.closest('.ob'); if (el && !el.contains(e.relatedTarget)) hide(); });
+    orbit.addEventListener('focusin', e => { const el = e.target.closest('.ob'); if (el && el.matches(':focus-visible')) { show(el); slow = 0.35; } });
+    orbit.addEventListener('focusout', () => { slow = 1; hide(); });
+    orbit.addEventListener('click', e => {
+      if (moved) { e.preventDefault(); e.stopPropagation(); return; }
+      const el = e.target.closest('.ob'); if (!el) return;
+      const it = list[+el.dataset.k]; lbOpen(it.pi, it.ii);
+    });
+  }
+
+
+  /* ---------------- vlist: crumpled drafts drifting by; the one you point at unfolds ---------------- */
+  const fmtD = s => { s = Math.round(s); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; };
+  const reel = $('#vReel'), vtrack = $('#vTrack');
+  const vlist = videos.filter(v => v.src && !v.placeholder);
+  if (reel && vtrack && vlist.length) {
+    const SC = 1.5;                                         // sheets are rendered at 1.5x
+    const kSize = () => innerWidth < 640 ? 0.68 : innerWidth < 1100 ? 0.85 : 1;
+    const durs = [];
+    const cardHTML = (v, i, clone) => {
+      const [fw, fh] = v.crumpleSize || [420, 700];
+      return `<button class="crc" type="button" data-v="${i}" data-cursor="تشغيل" ${clone ? 'tabindex="-1" aria-hidden="true"' : `aria-label="تشغيل فيديو ${esc(v.title)}"`}
+        style="--fw:${(fw / SC).toFixed(1)};--fh:${(fh / SC).toFixed(1)};--pad:${(Math.max(fw, fh) * 0.06 / 1.12 / SC).toFixed(1)};--n:${v.crumpleFrames || 12}">
+        <span class="crs" style="background-image:url('${esc(v.crumple || v.poster)}')"></span>
+        <video class="crv" muted loop playsinline preload="none"></video>
+        <span class="crc-cap"><b>${esc(v.title)}</b><time data-i="${i}"></time></span>
+      </button>`;
+    };
+    // one set, then clones until the vtrack is at least two screens wide
+    vtrack.innerHTML = vlist.map((v, i) => cardHTML(v, i, false)).join('');
+    let setW = 0;
+    const build = () => {
+      $$('.crc[aria-hidden]', vtrack).forEach(e => e.remove());
+      vtrack.style.setProperty('--k', kSize());
+      setW = vtrack.scrollWidth;
+      let reps = Math.max(1, Math.ceil((innerWidth * 2) / setW));
+      vtrack.insertAdjacentHTML('beforeend', Array.from({ length: reps }, () => vlist.map((v, i) => cardHTML(v, i, true)).join('')).join(''));
+      setW = setW + parseFloat(getComputedStyle(vtrack).columnGap || 0);
+    };
+    build();
+    let cards = $$('.crc', vtrack);
+    const state = new WeakMap();
+    const init = () => { cards = $$('.crc', vtrack); cards.forEach(c => { if (!state.has(c)) state.set(c, { f: (+c.style.getPropertyValue('--n') || 12) - 1, shown: -1 }); }); fillDurations(); };
+
+    function fillDurations() {
+      $$('time[data-i]', vtrack).forEach(t => { const d = durs[+t.dataset.i]; if (d) { t.textContent = fmtD(d); t.setAttribute('datetime', `PT${Math.round(d)}S`); } });
+    }
+    new IntersectionObserver((es, io) => {
+      if (!es[0].isIntersecting) return; io.disconnect();
+      vlist.forEach((v, i) => {
+        const m = document.createElement('video'); m.preload = 'metadata'; m.muted = true; m.src = v.src;
+        m.addEventListener('loadedmetadata', () => { if (isFinite(m.duration)) { durs[i] = m.duration; fillDurations(); } m.removeAttribute('src'); m.load(); }, { once: true });
+      });
+    }, { rootMargin: '400px' }).observe(reel);
+
+    let x = 0, speed = 0, last = 0, running = false, hover = null, drag = null, moved = false;
+    const SPEED = RM ? 0 : 95;                                // px per second
+    const frame = now => {
+      if (!running) return;
+      const dt = Math.min(0.05, (now - (last || now)) / 1000); last = now;
+      const target = (hover || drag) ? 0 : SPEED;
+      speed += (target - speed) * Math.min(1, dt * 4);
+      if (!drag) x -= speed * dt;
+      if (x <= -setW) x += setW; if (x > 0) x -= setW;
+      vtrack.style.transform = `translate3d(${x.toFixed(1)}px,0,0)`;
+      // the clip under the pointer (or nearest the middle) unfolds and plays its preview; the rest stay crumpled
+      let active = hover;
+      if (!active) {
+        const mid = innerWidth / 2; let best = 1e9;
+        for (const c of cards) { const r = c.getBoundingClientRect(); const d = Math.abs(r.left + r.width / 2 - mid); if (d < best) { best = d; active = c; } }
+      }
+      for (const c of cards) {
+        const st = state.get(c), n = +c.style.getPropertyValue('--n') || 12;
+        const goal = c === active ? 0 : n - 1;
+        st.f += Math.sign(goal - st.f) * Math.min(Math.abs(goal - st.f), dt * 30);
+        const fi = Math.round(st.f);
+        if (fi !== st.shown) { c.style.setProperty('--i', fi); st.shown = fi; }
+        c.classList.toggle('on', c === active);
+        const vEl = c.querySelector('video');
+        if (fi === 0 && c === active && !RM) {
+          if (!c.classList.contains('playing')) {
+            const v = vlist[+c.dataset.v];
+            if (v.preview && !vEl.src) vEl.src = v.preview;
+            if (vEl.src) vEl.play().then(() => c.classList.add('playing')).catch(() => {});
+          }
+        } else if (c.classList.contains('playing')) { vEl.pause(); c.classList.remove('playing'); }
+      }
+      requestAnimationFrame(frame);
+    };
+    init();
+    new IntersectionObserver(es => {
+      const vis = es[0].isIntersecting;
+      if (vis && !running) { running = true; last = 0; requestAnimationFrame(frame); }
+      else if (!vis) running = false;
+    }).observe(reel);
+    addEventListener('resize', () => { build(); init(); });
+
+    vtrack.addEventListener('pointerover', e => { if (e.pointerType !== 'touch') { const c = e.target.closest('.crc'); if (c) hover = c; } });
+    reel.addEventListener('pointerleave', () => { hover = null; });
+    vtrack.addEventListener('focusin', e => { const c = e.target.closest('.crc'); if (c) hover = c; });
+    vtrack.addEventListener('focusout', () => { hover = null; });
+    // swipe / drag the reel
+    reel.addEventListener('pointerdown', e => { if (e.button) return; drag = { x: e.clientX, y: e.clientY }; moved = false; });
+    addEventListener('pointermove', e => {
+      if (!drag) return;
+      const dx = e.clientX - drag.x;
+      if (!moved && Math.abs(dx) > 6 && Math.abs(dx) > Math.abs(e.clientY - drag.y)) moved = true;
+      if (moved) { x += dx; drag.x = e.clientX; drag.y = e.clientY; }
+    });
+    const end = () => { if (drag) { drag = null; setTimeout(() => { moved = false; }, 0); } };
+    addEventListener('pointerup', end); addEventListener('pointercancel', end);
+    reel.addEventListener('dragstart', e => e.preventDefault());
+    vtrack.addEventListener('click', e => {
+      if (moved) { e.preventDefault(); return; }
+      const c = e.target.closest('.crc'); if (c) openPlayer(vlist[+c.dataset.v]);
+    });
+  }
+
 
   /* ---------------------------------------------------------
      TEXT SPLITTING
